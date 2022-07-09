@@ -4,6 +4,10 @@ system/etc/apns-conf.xml
 system/etc/fiveG-apns-conf.xml
 system/etc/xcap-apns-conf.xml
 
+# Bluetooth
+lib64/libaptX_encoder.so
+lib64/libaptXHD_encoder.so
+
 # MTK-IMS
 system/bin/vtservice
 system/etc/init/init.vtservice.rc
