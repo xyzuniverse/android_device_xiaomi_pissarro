@@ -124,6 +124,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
+# In-call service
+PRODUCT_PACKAGES += \
+    MtkInCallService
+
 # Init
 PRODUCT_PACKAGES += \
     init.mt6877.rc \
