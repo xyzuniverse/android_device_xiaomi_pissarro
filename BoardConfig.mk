@@ -142,6 +142,9 @@ BOARD_PREBUILT_ODMIMAGE := $(DEVICE_PATH)/prebuilt/odm.img
 
 TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS := true
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
