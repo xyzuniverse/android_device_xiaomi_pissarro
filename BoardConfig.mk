@@ -165,3 +165,10 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-11-05
 
+# Firmware
+include vendor/xiaomi/pissarro-firmware/BoardConfigVendor.mk
+
+# Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+TARGET_USES_PREBUILT_VENDOR_SEPOLICY := true
+TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
