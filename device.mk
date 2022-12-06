@@ -67,6 +67,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Properties
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure.recovery=0
 
+# Always use GPU for screen compositing
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_hwc_overlays=1
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \

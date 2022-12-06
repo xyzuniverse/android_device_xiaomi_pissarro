@@ -2,6 +2,8 @@ on init
     setprop sys.usb.ffs.aio_compat 1
 on property:sys.boot_completed=1
     chmod 0640 /sys/fs/selinux/enforce
+    # force disable hw overlays to be true
+    exec - root -- /system/bin/sh -c "service call SurfaceFlinger 1008 i32 1" 
 
 on post-fs
     mount none /system/bin/hw/android.hardware.lights-service.mt6877 /vendor/bin/hw/android.hardware.lights-service.mediatek bind
