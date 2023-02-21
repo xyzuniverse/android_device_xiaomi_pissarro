@@ -22,7 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Get non-opensource-specific aspects
 $(call inherit-product, vendor/xiaomi/pissarro/pissarro-vendor.mk)
+
+# GCam
+$(call inherit-product-if-exists, vendor/GoogleCamera/config.mk)
 
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -124,10 +128,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
-# In-call service
-PRODUCT_PACKAGES += \
-    MtkInCallService
-
 # Init
 PRODUCT_PACKAGES += \
     init.mt6877.rc \
@@ -145,13 +145,11 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
     $(DEVICE_PATH)/configs/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
 
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.lights-service.mt6877
-
 # Permissions
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+    $(DEVICE_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml \
+    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist.xml
 
 # Screen density
 PRODUCT_AAPT_CONFIG := xxxhdpi

@@ -11,8 +11,8 @@ ro.surface_flinger.supports_background_blur=1
 Build.BRAND=MTK
 
 # Camera
-persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
+#persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com.google.camera
+#vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera
 
 # IPO
 sys.ipo.disable=1
@@ -48,3 +48,6 @@ wifi.tethering.interface=ap0
 vendor.rild.libargs=-d /dev/ttyC0
 vendor.rild.libpath=mtk-ril.so
 
+# MIUI Camera
+ro.miui.notch=1
+ro.product.mod_device=pissarro_global
