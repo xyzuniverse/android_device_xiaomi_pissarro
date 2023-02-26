@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_pissarro.mk
+    $(LOCAL_DIR)/xdroid_pissarro.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_pissarro-user \
-    aosp_pissarro-userdebug \
-    aosp_pissarro-eng
+    xdroid_pissarro-user \
+    xdroid_pissarro-userdebug \
+    xdroid_pissarro-eng
