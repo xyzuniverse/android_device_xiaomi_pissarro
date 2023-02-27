@@ -126,7 +126,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    libshim_vtservice
+    libshim_vtservice \
+    ImsInit
 
 # Init
 PRODUCT_PACKAGES += \
