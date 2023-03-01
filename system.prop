@@ -51,3 +51,6 @@ vendor.rild.libpath=mtk-ril.so
 # MIUI Camera
 ro.miui.notch=1
 ro.product.mod_device=pissarro_global
+
+# Always use GPU for screen compositing
+debug.sf.disable_hwc_overlays=1
