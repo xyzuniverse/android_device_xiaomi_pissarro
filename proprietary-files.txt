@@ -64,3 +64,7 @@ lib64/libdoc_photo.so
 lib64/libmtkisp_metadata_sys.so
 lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
+
+# Charger
+bin/charger
+lib/libshowlogo.so
