@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_pissarro.mk
+    $(LOCAL_DIR)/lineage_pissarro.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_pissarro-user \
-    xdroid_pissarro-userdebug \
-    xdroid_pissarro-eng
+    lineage_pissarro-user \
+    lineage_pissarro-userdebug \
+    lineage_pissarro-eng
