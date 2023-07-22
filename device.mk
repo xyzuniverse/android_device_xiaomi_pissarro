@@ -277,6 +277,7 @@ PRODUCT_PACKAGES += \
     init.mt6877.rc \
     init.mt6877.usb.rc \
     init.project.rc \
+    init.target.rc \
     init.sensor_2_0.rc \
     ueventd.mtk.rc
 
