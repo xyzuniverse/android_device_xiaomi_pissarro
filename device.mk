@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
    CarrierConfigPissarro \
    FrameworksResOverlayPissarro \
    SettingsResOverlayPissarro \
+   SystemUIOverlayPissarro \
    TelephonyResOverlayPissarro \
    TetheringResOverlayPissarro \
    WifiOverlay
