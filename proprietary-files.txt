@@ -234,6 +234,8 @@ vendor/lib64/lib3a.log.so
 vendor/lib64/lib3a.n3d3a.so
 vendor/lib64/lib3a.sensors.color.so
 vendor/lib64/lib3a.sensors.flicker.so
+vendor/lib64/libanc_dc_base.so
+vendor/lib64/libanc_dc_plugin_xiaomi_v2.so
 vendor/lib64/libCamera_gc02m1ofilmmipiraw_Default_Capture.so
 vendor/lib64/libCamera_gc02m1ofilmmipiraw_Default_Preview.so
 vendor/lib64/libCamera_gc02m1ofilmmipiraw_Default_Video.so
